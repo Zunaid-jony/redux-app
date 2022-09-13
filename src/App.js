@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Componet from "./Componets/Componet";
+import State from "./Componets/State";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div  className="App" >
+      <div class="text-center my-5 max-w-md mt-10 space-y-0 ml-auto mr-auto mt-5">
+        <br />
+        <p class="text-bold font-medium text-center text-2xl mt-3 ">
+          Simple Counter Application
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <br />
+        {/* couter section */}
+        <Componet></Componet>
+       
+
+
+
+
+        <Componet></Componet>
+
+        <State count={0}></State>
+      </div>
     </div>
   );
 }
