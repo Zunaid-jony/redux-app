@@ -2,6 +2,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import Componet from "./Componets/Componet";
 import State from "./Componets/State";
+import { Provider } from "react-redux";
+import store from './redux/store';
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
         </p>
         <br />
         {/* couter section */}
+
+        <Provider store={store}>
         <Componet></Componet>
        
 
@@ -21,6 +25,7 @@ function App() {
 
 
         <Componet></Componet>
+        </Provider>
 
         <State count={0}></State>
       </div>
